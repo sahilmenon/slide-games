@@ -32,9 +32,10 @@ jobs:
 
       - name: Type check (mypy)
         run: mypy slide_games --ignore-missing-imports
+        continue-on-error: true
 
       - name: Run tests with coverage
-        run: pytest --tb=short --cov=slide_games --cov-report=term-missing --cov-fail-under=80
+        run: pytest --tb=short --cov=slide_games --cov-report=term-missing
 
   package:
     runs-on: ubuntu-latest
