@@ -27,7 +27,9 @@ State spaces grow quickly when collectibles are involved (Pac-Man with *n* pelle
 
 ## Installation
 
-Install via `pip install slide-games`.
+```bash
+pip install slide-games
+```
 
 ### Prerequisites — Google Cloud credentials
 
